@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+    <title>Document</title>
+    <script src="./simon.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div class="keyboard">
+      <div class="row">
+        <div class="key" data-key="81">q</div>
+        <div class="key" data-key="87">w</div>
+        <div class="key" data-key="69">e</div>
+        <div class="key" data-key="82">r</div>
+        <div class="key" data-key="84">t</div>
+        <div class="key" data-key="89">y</div>
+        <div class="key" data-key="85">u</div>
+        <div class="key" data-key="73">i</div>
+        <div class="key" data-key="79">o</div>
+        <div class="key" data-key="80">p</div>
+      </div>
+      <div class="row">
+        <div class="key" data-key="65">a</div>
+        <div class="key" data-key="83">s</div>
+        <div class="key" data-key="68">d</div>
+        <div class="key" data-key="70">f</div>
+        <div class="key" data-key="71">g</div>
+        <div class="key" data-key="72">h</div>
+        <div class="key" data-key="74">j</div>
+        <div class="key" data-key="75">k</div>
+        <div class="key" data-key="76">l</div>
+      </div>
+      <div class="row last">
+        <div class="key" data-key="90">z</div>
+        <div class="key" data-key="88">x</div>
+        <div class="key" data-key="67">c</div>
+        <div class="key" data-key="86">v</div>
+        <div class="key" data-key="66">b</div>
+        <div class="key" data-key="78">n</div>
+        <div class="key" data-key="77">m</div>
+      </div>
+      <button id="startButton" class="btn-start">Empezar a jugar!</button>
+      <div id="round"></div>
+      <div id="score"></div>
+      <div id="sendScore" class="form">
+          <form class="sendButton">
+              Nombre: <input type="text" id="name">
+              <button type="button" onclick="sendScore()">Enviar Puntaje</button>
+          </form>
+         
+      </div>
+    </div>
+    <table id="dataTable" style="width:355px; BORDER-COLLAPSE:collapse">
+      <tr>
+          <td id="0">Id</td>
+          <td id="0">Nombre</td>
+          <td id="1">Rondas</td>
+          <td id="2">Puntaje</td>
+      </tr>
+      <tr>
+          <td><div class="row_0"></div></td>
+          <td><div class="row_0"></div></td>
+          <td><div class="row_0"></div></td>
+          <td><div class="row_0"></div></td>
+      </tr>
+      <tr>
+        <td><div class="row_1"></div></td>
+        <td><div class="row_1"></div></td>
+        <td><div class="row_1"></div></td>
+        <td><div class="row_1"></div></td>
+      </tr>
+      <tr>
+        <td><div class="row_2"></div></td>
+        <td><div class="row_2"></div></td>
+        <td><div class="row_2"></div></td>
+        <td><div class="row_2"></div></td>
+      </tr>
+      <tr>
+        <td><div class="row_3"></div></td>
+        <td><div class="row_3"></div></td>
+        <td><div class="row_3"></div></td>
+        <td><div class="row_3"></div></td>
+      </tr>
+      <tr>
+        <td><div class="row_4"></div></td>
+        <td><div class="row_4"></div></td>
+        <td><div class="row_4"></div></td>
+        <td><div class="row_4"></div></td>
+      </tr>
+  </table>
+  </body>
+</html>
